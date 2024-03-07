@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #898181;
+    background-image: url("../images/image\ 1.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    z-index: -10;
+}
+
+h1 {
+    font-family: 'Cinzel';
+    font-weight: 800;
+    font-size: 72px;
+    color: #67695D;
+}
+
+h2 {
+    font-family: 'Frank Ruhl Libre';
+    color: #67695D;
+    font-size: 29px;
+    font-weight: 750;
+}
+
+p {
+    font-family: 'Frank Ruhl Libre';
+    color:#62635e;
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+
+ol {
+    font-family: 'Frank Ruhl Libre';
+    color:#323231;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+ul {
+    font-family: 'Frank Ruhl Libre';
+    color:#323231;
+    font-size: 18px;
+    font-weight: 400;
+}
+
