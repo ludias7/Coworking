@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRADA</title>
+    <title>LD Coworking</title>
     <link rel="stylesheet" href="style.css">
     
     <style>
@@ -13,94 +13,67 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Prada</a>
+        <a href="#" class="logo">LD Coworking</a>
         <nav class="navbar">
             <a href="#" class="active">HOME</a>
-            <a href="#">BOLSAS</a>
-            <a href="#">CALÇADOS</a>
-            <a href="#">READY TO WEAR</a>
-            <a href="#">ACESSÓRIOS</a>
+            <a href="#">ESPAÇOS</a>
+            <a href="#">SERVIÇOS</a>
+            <a href="#">CONTATO</a>
         </nav>
     </header>
     
     <section class="home">
         <div class="home-content">
-            <h1>2024 Fall/Winter collection</h1>
-            <p>An instinctive attraction to history. The Fall/Winter 2024 Prada collection by Miuccia Prada and Raf Simons embeds fashion with fragments of histories, in an exploration of notions of beauty, of a contemporary world formed by memories. There is a romance, with the past</p>
-            <div class="btn-box">
-               
-            </div>
+            <h1>Bem-vindo ao LD Coworking Space</h1>
+            <p>Trabalho de forma produtiva + Networking em um lugar só!</p>
         </div>
     </section>
 
-    <section id="secao-apresentac">
+    <section id="secao-espacos">
+        <h2>Nossos Espaços</h2>
+        <div class="espacos-container">
+            <div class="espaco">
+                <img src="https://th.bing.com/th/id/OIP.lz5FGWraI0kMrkAfVodsEwHaE8?rs=1&pid=ImgDetMain" alt="Espaço de Coworking">
+                <h3>Espaço 1</h3>
+                <p> Localizado na Zona Norte de SP</p>
+            </div>
+            <div class="espaco">
+                <img src="https://i.pinimg.com/originals/12/2a/57/122a576ba857ff40e22203f500c7cca1.jpg" alt="Espaço de Coworking">
+                <h3>Espaço 2</h3>
+                <p>Localizado na Zona Oeste de SP</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="secao-servicos">
+        <h2>Nossos Serviços</h2>
         <ul>
-            <li class="card">
-                <div class="image">
-                    <img src="https://images.unsplash.com/photo-1558546793-8605713ae4f3?q=80&w=1396&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-                </div>
-                <div class="texto"></div>
-            </li>
+            <li>- Espaços de trabalho compartilhados</li>
+            <li>- 5 salas de reunião por espaço</li>
+            <li>- Cafeteria disponível</li>
+            <li>- Internet</li>
+         
         </ul>
     </section>
 
-    <section id="secao-orcamento">
-        <h2></h2>
-        <form id="form-filtro">
-            <div class="campo linha">
+    <section id="secao-contato">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <div class="campo">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome">
+                <input type="text" id="nome" required>
             </div>
-            
-            
-            
-            <div class="campo linha">
-                <label for="tipo">Tamanho</label>
-                <select name="tipo" id="tipo">
-                    <option value="PP">PP</option>
-                    <option value="P">P</option>
-                    <option value="M">M</option>
-                    <option value="G">G</option>
-                    <option value="GG">GG</option>
-                </select>
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
             </div>
-
-            <div class="campo linha">
-                <label for="cor">Cor</label>
-                <select name="cor" id="cor">
-                    <option value="azul">Azul</option>
-                    <option value="branco">Branco</option>
-                    <option value="preto">Preto</option>
-                    <option value="dourado">Dourado</option>
-                    <option value="marrom">Marrom</option>
-                </select>
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="4" required></textarea>
             </div>
-
-            <button id="btn-filtrar">Filtrar</button>
+            <button type="submit">Enviar</button>
         </form>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const btnFiltrar = document.getElementById('btn-filtrar');
-
-                // Adiciona um ouvinte de evento para o clique no botão de filtragem
-                btnFiltrar.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    // Captura os valores selecionados nos campos de filtro
-                    const nome = document.getElementById('nome').value;
-                    const qtde = document.getElementById('qtde').value;
-                    const tamanho = document.getElementById('tipo').value;
-                    const cor = document.getElementById('cor').value;
-
-                    // Aqui você pode realizar a lógica de filtragem
-                    // Por enquanto, apenas imprime os valores no console
-                    console.log('Nome:', nome);
-                    console.log('Qtde de pág.:', qtde);
-                    console.log('Tamanho:', tamanho);
-                    console.log('Cor:', cor);
-                });
-            });
-        </script>
     </section>
 </body>
 </html>
